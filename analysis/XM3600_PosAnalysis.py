@@ -9,8 +9,9 @@ import seaborn as sns
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pgf import FigureCanvasPgf
-import os
 import numpy as np
+
+import os
 
 matplotlib.use("pgf")
 matplotlib.backend_bases.register_backend('pdf', FigureCanvasPgf)

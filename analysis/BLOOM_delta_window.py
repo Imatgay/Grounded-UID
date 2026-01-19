@@ -2,7 +2,9 @@
 # - Table 8
 # - Table 9
 
-import pandas as pd, numpy as np, ast
+import pandas as pd
+import numpy as np
+import ast
 from pathlib import Path
 
 def export_latex_table(df_diff, unit_label, tex_file_name, caption_label, LATEX_DIR):

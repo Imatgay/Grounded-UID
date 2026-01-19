@@ -7,9 +7,10 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import statsmodels.formula.api as smf
+import statsmodels.api as sm
+
 from pathlib import Path
 import ast
-import statsmodels.api as sm
 
 
 IN_DIR = Path("data/BLOOM_processed_data")
