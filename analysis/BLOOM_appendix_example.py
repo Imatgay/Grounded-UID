@@ -15,7 +15,7 @@ c_p = "#785EF0"
 c_d = "#DC267F"
 c_dp = "#648FFF"
 
-fontsize = 10
+fontsize = 21
 matplotlib.rcParams.update({
     "text.usetex": True,
     "pgf.rcfonts": False,
@@ -49,9 +49,9 @@ p = [11.50, 12.69, 7.88, 1.73, 2.63, 1.35, 2.73, 12.44, 6.69, 3.36, 9.94, 2.73, 
 dp = [np.nan]*7 + [5.53, 2.41, 2.91, 12.00, 1.98, 1.87, 10.56, 1.68, 2.78, 4.16, 3.67, 6.12, 0.53, 1.91, 7.47, 0.83]
 x = np.arange(len(words))
 
+fig, (ax_img, ax_plot) = plt.subplots(2, 1, figsize=(25, 5), sharex=True, 
+                                     gridspec_kw={'height_ratios': [0.5, 2.5]})
 
-fig, (ax_img, ax_plot) = plt.subplots(2, 1, figsize=(25, 6), sharex=True, 
-                                     gridspec_kw={'height_ratios': [2.5, 1]})
 fig.subplots_adjust(hspace=0.00)
 ax_img.axis('off')
 ax_img.set_ylim(0, 1)
@@ -91,10 +91,10 @@ ax_plot.set_xticklabels([fr"\textbf{{{w}}}" for w in words], rotation=0)
 ax_plot.set_ylabel(r"Surprisal (bits)")
 ax_plot.legend(
     loc='upper center', 
-    bbox_to_anchor=(0.5, -0.25), 
+    bbox_to_anchor=(0.5, -0.15), 
     ncol=4, 
     frameon=False, 
-    fontsize=10,
+    fontsize=23,
     handletextpad=0.1,
     columnspacing=2.0
 )
